@@ -1,0 +1,21 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  name: redis
+  annotations:
+    version: "7.0"
+    description: "Redis is a in-memory database and cache."
+spec:
+  components:
+    - name: redis
+      type: webservice
+      properties:
+        image: redis:7.0
+        cpu: "200m"
+        memory: "256Mi"
+        ports:
+        - port: 6379
+          expose: true
+        env:
+        - name: REDIS_PASSWORD
+          value: your_password

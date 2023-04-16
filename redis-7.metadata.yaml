@@ -1,0 +1,19 @@
+apiVersion: core.napptive.com/v1alpha1
+kind: ApplicationMetadata
+name: "Redis"
+version: "7.0"
+description: Redis database
+keywords:
+  - "redis"
+  - "cache"
+  - "in-memory"
+  - "Remote Dictionary Server"
+  - "database"
+license: "BSD-3-Clause"
+url: "https://redis.io"
+doc: "https://redis.io/docs/"
+logo:
+  - src: "https://redis.com/wp-content/themes/wpx/assets/images/logo-redis-white.svg?auto=webp&quality=85,75&width=500" 
+    type: "image/png"
+    size: "150x150"
+
